@@ -1,0 +1,38 @@
+.madeWithLove {
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+.madeWithLove-text {
+    font-family: 'Dosis', sans-serif;
+    color: #666;
+    font-size: 15px;
+} 
+ 
+ span > a {
+    font-family: 'Dosis', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+ }
+
+.fa {
+    color: #e74c3c;
+    margin: 0 3px;
+    font-size: 1.3em; 
+    animation: pound .35s infinite alternate;
+    -webkit-animation: pound .35s infinite alternate   
+ }
+
+@-webkit-keyframes  pound {
+    to {
+        transform: scale(1.1)
+    }
+}
+
+
+@keyframes pound {
+    to {
+        transform: scale(1.1)
+    }
+}

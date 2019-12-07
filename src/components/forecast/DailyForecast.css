@@ -1,0 +1,52 @@
+
+.forecast-body { 
+    width: 115px;
+    margin-bottom: -1.5rem;
+    margin-left: -2rem;
+   }
+   
+.forecast-header {
+     width: 250px; 
+     height: 56px;
+     margin-top: -28px; 
+   }
+.forecast-header > .inner-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+}
+
+.text {
+    color: #dcdde1;
+}
+
+.muted-text {
+    font-size: 10px;
+    margin-left: 14px;
+    color: #dcdde1;
+}
+   
+#forecast-text {
+     font-size: 15px;
+   }
+
+.forecast-header img {
+    margin-top: -1.4em;
+   }
+
+.inner-container img {
+    height: 3.8em;
+    margin-top: -10px;
+}
+
+.square {
+  height: 25px;
+  width: 36px; 
+  background-color: #57606f;
+  opacity: 0.65;
+  font-weight: bolder;
+  margin-right:10px;
+  margin-left: -15px;
+  color: #ffffff;
+  font-family: 'Oxygen';
+}

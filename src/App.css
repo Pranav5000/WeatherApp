@@ -1,0 +1,217 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300';
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css';    
+
+.form-container {
+    height: 90vh;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    background-image: url("images/water_droplet2.jpg");
+    background-repeat: no-repeat;
+    background-position: 40% 10%;
+
+  }
+
+.image-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container .content {
+    pointer-events: relative;
+    z-index: 1;
+    margin:0;
+    text-align: center;
+  }
+  .toast-background {
+    opacity: 0.75;
+  }
+
+.card-header {
+  box-shadow: 0 8px 6px -6px black;
+  border: 2px solid transparent;
+  color: #ecf0f1;
+}
+
+.card .md-form label {
+    color: #dfe6e9;
+}
+
+#text-input {
+  color: #dfe6e9;
+}
+
+/* Weather Card */
+#myImg {
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%; 
+  position: absolute;
+}
+
+.container {
+  background-attachment:fixed;
+  width: 100vmin;
+  height: 100vmin;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+@media screen and (max-width: 760px) {
+  .image-container, .form-container {
+    text-align: center;
+  }
+}
+
+nav ul {
+  margin: 20px 20px 0 20px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+nav li a {
+  display: block;
+  width: 50px;
+  text-align: center;
+  color: #aaa;
+  cursor: pointer;
+}
+nav li a:hover {
+  color: #444;
+}
+nav li a.active {
+  color: #44f;
+}
+#card {
+  box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  width: 500px;
+  padding: 0;
+  height: 500px;
+  min-height: 300px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+#card .details {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  color: #888;
+  display: flex;
+  flex-direction: row;
+}
+.thunder #card .details {
+  color: #ddd;
+}
+#card .details .right {
+  text-align: right;
+}
+#card .details #date {
+  margin: 4px 0;
+}
+
+.weather2 {
+  background-color: none;
+  transition: background-color 2s ease;
+}
+.weather {
+ opacity: 0.5;
+ overflow:hidden;
+ border-radius: 5px;
+ z-index:1;
+}
+
+.weather:before {
+ content:'';
+ background: inherit; 
+ position: relative;
+ box-shadow: inset 0 0 200px rgba(255,255,255,0.05);
+ top:0;
+ right:0;
+ left:0;
+ bottom:0;
+}
+.thunder .weather {
+  background-color: #9fa4ad;
+}
+.rain .weather {
+  background-color: #d8d8d8;
+}
+.sun .weather {
+  background-color: #ccf;
+}
+.weather #inner {
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.weather .cloud {
+  transition: fill 2s ease;
+}
+.weather #cloud1 {
+  fill: #efefef;
+}
+.thunder .weather #cloud1 {
+  fill: #9fa4ad;
+}
+.weather #cloud2 {
+  fill: #e6e6e6;
+}
+.thunder .weather #cloud2 {
+  fill: #8b8e98;
+}
+.weather #cloud3 {
+  fill: #d5d5d5;
+}
+.thunder .weather #cloud3 {
+  fill: #7b7988;
+}
+#outer, #back {
+  position: fixed;
+  pointer-events: none;
+}
+
+.github-corner:hover
+.octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%, 100% {
+		transform: rotate(0);
+	}
+
+	20%, 60% {
+		transform: rotate(-25deg);
+	}
+
+	40%, 80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+
+	.github-corner
+.octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
+}
+
